@@ -1,0 +1,204 @@
+    1  ls /
+    2  ls /usr
+    3  pwd
+    4  cd /root
+    5  pwd
+    6  cd usr
+    7  cd /usr
+    8  pwd
+    9  cd /home
+   10  pwd
+   11  mkdir test1
+   12  ls
+   13  cd /home
+   14  pwd
+   15  mkdir test2/test3
+   16  cd /home
+   17  pwd
+   18  mkdir -p test2/test3
+   19  ls
+   20  ls test2
+   21  cd /home
+   22  pwd
+   23  touch test1/index.php
+   24  cd test1
+   25  ls
+   26  cd /home/test1 && ls
+   27  cd /home/test1
+   28  ls
+   29  cp index.php copy.php
+   30  ls
+   31  cd /home
+   32  ls
+   33  cp -r test1 test4
+   34  ls
+   35  ls test4
+   36  cd /home
+   37  ls
+   38  ls test2
+   39  pwd
+   40  mv test2/test3 test3
+   41  ls
+   42  cd /home
+   43  ls
+   44  mv test4 test1_copy
+   45  ls
+   46  cd /home
+   47  ls test1
+   48  rm test1/copy.php
+   49  ls test1
+   50  cd /home
+   51  ls
+   52  rm -r test3
+   53  ls
+   54  cd /home
+   55  ls
+   56  ls test1_copy
+   57  rm test1_copy/*.php
+   58  ls test1_copy
+   59  cd /home
+   60  ls
+   61  ls test1
+   62  cd /home
+   63  pwd
+   64  echo '# Hello World' > README.md
+   65  cat README.md
+   66  echo '# Server Lesson' > README.md
+   67  cat README.md
+   68  cd /home
+   69  echo 'Linux Practice' >> README.md
+   70  echo '-----------------' >> README.md
+   71  cat README.md
+   72  cd /home
+   73  vi README.md
+   74  cd /root
+   75  pwd
+   76  mkdir server_lesson && cd server_lesson
+   77  pwd
+   78  yum update -y && yum -y install git
+   79  git version
+   80  pwd
+   81  git init
+   82  touch first.txt
+   83  ls
+   84  git branch
+   85  git branch --contains
+   86  git status
+   87  git add first.txt
+   88  git status
+   89  git commit -m 'make first.txt'
+   90  git remote add origin https://github.com/toyo09216/Linux_practice.git
+   91  git remote -v
+   92  git commit -m "make first.txt"
+   93  git config --global user.email atsushi09216@gmail.com
+   94  git config --global user.name toyo09216
+   95  git commit -m "make first.txt"
+   96  git branch -M main
+   97  git push -u origin main
+   98  git push -u origin main
+   99  git checkout -b practice01
+  100  git branch
+  101  cd /root
+  102  ls
+  103  cd server_lesson
+  104  pwd
+  105  ls
+  106  mkdir -p linux_practice1/public/index.php
+  107  git add index.php
+  108  ls
+  109  cd linux_practice1
+  110  ls
+  111  cd public
+  112  ls
+  113  git add index.php
+  114  git status
+  115  git commit -m "make index.php"
+  116  pwd
+  117  cp index.php index_bk.php
+  118  ls
+  119  cp index.php ./index_bk.php
+  120  ls
+  121  cd /root/server_lesson/linux_practice1/public
+  122  pwd
+  123  ls
+  124  cp index.php index_bk.php
+  125  ls
+  126  git log
+  127  pwd
+  128  touch index_bk.php
+  129  ls
+  130  cd ../
+  131  cp -r public tmp
+  132  ls
+  133  cd tmp
+  134  ls
+  135  rm index_bk.php
+  136  cd ../
+  137  ls
+  138  cd tmp
+  139  ls
+  140  cd /root/server_lesson
+  141  ls
+  142  touch README.md
+  143  ls
+  144  vi README.md
+  145  cat README.md
+  146  cd /root/server_lesson
+  147  ls
+  148  cd linux_practice1
+  149  ls
+  150  cd public
+  151  ls
+  152  cd ../
+  153  ls
+  154  cd tmp
+  155  ls
+  156  git branch
+  157  git add .
+  158  git status
+  159  git commit -m "write README.md"
+  160  git add README.md
+  161  pwd
+  162  cd /root/server_lesson
+  163  git add README.md
+  164  git status
+  165  git commit -m "write README.md"
+  166  git branch
+  167  git push origin practice01
+  168  git switch main
+  169  git checkout main
+  170  git branch
+  171  git merge practice01
+  172  git branch
+  173  git checkout -b practice02
+  174  git branch
+  175  cd /root/server_lesson
+  176  pwd
+  177  ls
+  178  mkdir -p linux_practice2/documents
+  179  ls
+  180  cd linux_practice2/documents
+  181  ls
+  182  touch gizumo{01..50}.md
+  183  ls
+  184  pwd
+  185  mv gizumo{20..40}.md /root/server_lesson/linux_practice2/trash
+  186  cd /root/server_lesson/linux_practice2
+  187  mkdir trash
+  188  ls
+  189  cd documents
+  190  mv gizumo{20..40}.md /root/server_lesson/linux_practice2/trash
+  191  cd /root/server_lesson/linux_practice2/trash
+  192  ls
+  193  cd /root/server_lesson/linux_practice2/documents
+  194  ls
+  195  cd /root/server_lesson/linux_practice2
+  196  pwd
+  197  touch .gitignore
+  198  ls
+  199  ls -a
+  200  vi .gitignore
+  201  cat .gitignore
+  202  history 300ã€ >> exec_command.log
+  203  history 10
+  204  history 300 > exec_command.log
